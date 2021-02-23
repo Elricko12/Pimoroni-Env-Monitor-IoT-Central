@@ -1,0 +1,133 @@
+{
+  "@id": "urn:cptHomeAirQuality:PimoroniEnviro_1c2:2",
+  "@type": "CapabilityModel",
+  "contents": [],
+  "displayName": {
+    "en": "Pimoroni Enviro+"
+  },
+  "implements": [
+    {
+      "@id": "urn:cptHomeAirQuality:PimoroniEnviro_1c2:PimoroniEnviro_6h5:2",
+      "@type": "InterfaceInstance",
+      "displayName": {
+        "en": "Interface"
+      },
+      "name": "PimoroniEnviro_6h5",
+      "schema": {
+        "@id": "urn:cptHomeAirQuality:PimoroniEnviro_6h5:2",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@id": "urn:cptHomeAirQuality:PimoroniEnviro_6h5:temperature:2",
+            "@type": [
+              "Telemetry",
+              "SemanticType/Temperature"
+            ],
+            "displayName": {
+              "en": "Temperature"
+            },
+            "name": "temperature",
+            "schema": "double",
+            "unit": "celsius"
+          },
+          {
+            "@id": "urn:cptHomeAirQuality:PimoroniEnviro_6h5:pressure:2",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Pressure"
+            },
+            "name": "pressure",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:cptHomeAirQuality:PimoroniEnviro_6h5:humidity:2",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Humidity"
+            },
+            "name": "humidity",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:cptHomeAirQuality:PimoroniEnviro_6h5:light:2",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Light"
+            },
+            "name": "light",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:cptHomeAirQuality:PimoroniEnviro_6h5:oxidation:2",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Oxidation"
+            },
+            "name": "oxidation",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:cptHomeAirQuality:PimoroniEnviro_6h5:nh3:2",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Nh3"
+            },
+            "name": "nh3",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:cptHomeAirQuality:PimoroniEnviro_6h5:redu:2",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Redu"
+            },
+            "name": "redu",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:cptHomeAirQuality:PimoroniEnviro_6h5:pm1:2",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Pm1"
+            },
+            "name": "pm1",
+            "schema": "double",
+            "displayUnit": {
+              "en": "ug/m3"
+            }
+          },
+          {
+            "@id": "urn:cptHomeAirQuality:PimoroniEnviro_6h5:pm25:2",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Pm25"
+            },
+            "name": "pm25",
+            "schema": "double",
+            "displayUnit": {
+              "en": "ug/m3"
+            }
+          },
+          {
+            "@id": "urn:cptHomeAirQuality:PimoroniEnviro_6h5:pm10:2",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Pm10"
+            },
+            "name": "pm10",
+            "schema": "double",
+            "displayUnit": {
+              "en": "ug/m3"
+            }
+          }
+        ],
+        "displayName": {
+          "en": "Interface"
+        }
+      }
+    }
+  ],
+  "@context": [
+    "http://azureiot.com/v1/contexts/IoTModel.json"
+  ]
+}
