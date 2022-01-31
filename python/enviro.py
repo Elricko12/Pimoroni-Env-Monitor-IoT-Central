@@ -113,9 +113,9 @@ light = 1
 for v in variables:
     values[v] = [1] * WIDTH
 
-deviceId = "rpzw-p100"
+deviceId = "rpi-air-quality"
 scopeId = "0ne00499281"
-deviceKey = "WcpajHwtTQdAlnHqVCqERs01uTz9jK2aWwiNGeUL3YY="
+deviceKey = "cuJJPESTunuOdwdi8s5iYxeBqME10MLFxKvIhH6LZeI="
 
 iotc = iotc.Device(scopeId, deviceKey, deviceId, IOTConnectType.IOTC_CONNECT_SYMM_KEY)
 iotc.setLogLevel(IOTLogLevel.IOTC_LOGGING_API_ONLY)
